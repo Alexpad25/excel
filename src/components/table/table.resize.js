@@ -1,4 +1,4 @@
-import {$} from '@core/dom';
+import {$} from '@core/dom'
 
 export function resizeHandler($root, event) {
   const $resizer = $(event.target)
@@ -10,7 +10,6 @@ export function resizeHandler($root, event) {
 
   $resizer.css({
     opacity: 1,
-    zIndex: 1000,
     [sideProp]: '-5000px'
   })
 
