@@ -70,8 +70,9 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    opacity: 0;
     background: $primary-color;
+    opacity: 0;
+    z-index: 1000;
 
     &:hover {
       opacity: 1!important;
@@ -81,20 +82,18 @@
   .col-resize {
     top: 0;
     width: 4px;
-    cursor: col-resize;
 
     &:hover {
-      opacity: 1;
+      cursor: col-resize;
     }
   }
 
   .row-resize {
     left: 0;
     height: 4px;
-    cursor: row-resize;
 
     &:hover {
-      opacity: 1;
+      cursor: row-resize;
     }
   }
 
